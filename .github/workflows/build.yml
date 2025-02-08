@@ -323,7 +323,7 @@ jobs:
           cd build
           cmake .. \
             -DLLAMA_FATAL_WARNINGS=ON \
-            -DLLAMA_LLGUIDANCE=OFF
+           # -DLLAMA_LLGUIDANCE=OFF
           cmake --build . --config Release -j $(nproc)
 
       - name: Test
